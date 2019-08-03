@@ -1,0 +1,451 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.hide{
+    display: none;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+}
+
+.landing{
+    background-image: url('../img/BG.png');
+    background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+button {
+	font-family: 'Poppins', sans-serif;
+}
+
+.funweather {
+	display: flex;
+	width: 81%;
+	height: 10vh;
+	margin: auto;
+	align-items: center;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+	display: flex;
+}
+
+.logo-container {
+	flex: 1;
+}
+.logo {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px;
+    color: white;
+}
+nav {
+	flex: 4;
+}
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-link {
+	color: #ededf5;
+	font-size: 18px;
+	text-decoration: none;
+}
+.cart {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.presentation {
+	display: flex;
+	width: 81%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+}
+.introduction {
+	flex: 1;
+}
+.intro-text h1 {
+	font-size: 44px;
+	font-weight: 600;
+	background: linear-gradient(to right, #ffffff, #e6e6e6);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.intro-text p {
+	margin-top: 5px;
+	font-size: 18px;
+	color: #ffffff;
+}
+.cta {
+	padding: 10px 0px 0px 0px;
+}
+.cta-select {
+	border: 2px solid #f80303;
+	background: #f80303;
+	color: white;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 5%;
+}
+.cta-add {
+	background: #0026ff;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+	border: none;
+	color: white;
+    margin: 30px 0px 0px 10px;
+    border-radius: 5%;
+}
+
+.cover {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+.cover img {
+	height: 100%;
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+}
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.scroll{
+	text-align: center;
+}
+
+@media screen and (max-width: 1124px) {
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+	.cover img {
+		height: 80%;
+	}
+}
+
+/* Second page */
+.feature {
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.feature h2{
+    color: #0026ff;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.feature p{
+    color: #4d4d4dbb;
+    padding: 10px;
+}
+
+#demo{
+	text-align : center;
+	
+}
+
+.parallax {
+    text-align: center;
+	padding: 2%;
+	animation: drop 1.5s ease;
+}
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(0px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(-15px);
+	}
+}
+
+.parallax img{
+    padding: 1.5%;
+}
+
+.ctc {
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.ctc h2{
+    color: #0026ff;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.ctc p{
+    color: #4d4d4dbb;
+    padding: 7px;
+}
+
+.owl-carousel{
+	text-align: -webkit-center;
+}
+
+.cards {
+	padding: 0px 290px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iPhone{
+	filter: drop-shadow(0px 5px 1px rgb(134, 134, 134));
+}
+
+.clouds{
+    padding: 10%;
+}
+
+.clouds h2{
+    color: #0026ff;
+	letter-spacing: 3px;
+	font-size: 30px;
+    padding: 10px;
+}
+
+.clouds h5 {
+	color: #696969;
+	font-size: 17px;
+    padding: 8px;
+}
+
+.clouds img {
+	padding: 30px 0px;
+}
+
+.reviews,
+.reviews1 {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.user-reviews, .user-reviews1{
+	padding: 30px;
+}
+
+.download{
+	background-image: url('../img/DOWNLOAD.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 6.5%;
+}
+.download h2 {
+	color: #ffffff;
+	font-size: 34px;
+	letter-spacing: 3px;
+}
+.download p {
+	font-size: 17px;
+	color: white;
+}
+
+.download a {
+	position: absolute;
+	margin-top: 2%;
+}
+
+.fun {
+	background: rgb(88, 48, 88);
+	width: 100%;
+	padding: 150px 100px;
+}
+
+#funn{
+	color: red;
+	font-size: 25px;
+	letter-spacing: 2px;
+}
+
+#weath{
+	color: #0026ff;
+	font-size: 25px;
+	letter-spacing: 2px;
+}
+
+#copyright{
+	text-align: end;
+	color: white;
+	padding: 30px;
+}
+
+#top{
+	float: right;
+}
+
+@media screen and (max-width: 1499px) {
+	.download {
+		padding: 5%;
+	}
+	.download a{
+		margin-top: 0.5%;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.download {
+		padding: 2%;
+	}
+
+	.download h2 {
+		font-size: 24px;
+	}
+	.download p{
+		font-size: 14px;
+		color: black;
+	}
+	.download a{
+		margin-top: 0%;
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 750px) {
+	.cards{
+		padding: 0px 135px;
+	}
+	.phone img{
+		height: 500px;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+
+.funweather {
+    display: contents;
+    width: 81%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+.logo-container{
+	justify-content: center;
+}
+.introduction{
+	margin-top: 1vh;
+}
+.intro-text h1{
+	font-size: 22px;
+}
+.intro-text p{
+	font-size: 14px;
+}
+.cta {
+    padding: 10px 0px 8px 0px;
+}
+.cta-add{
+	width: 130px;
+	height: 40px
+}
+.cta-select{
+	width: 130px;
+	height: 40px
+}
+.owl-item img{
+	width: 50% !important;
+}
+.card{
+	justify-content: center;
+}
+.cards{
+	padding: 0%;
+}
+.clouds{
+	padding: 5%;
+}
+.clouds img{
+	padding: 0px;
+}
+.clouds h2{
+	padding: 0%;
+	font-size: 20px;
+}
+.clouds h5{
+	padding: 0%;
+	font-size: 12px;
+}
+.iPhone{
+	height: 250px !important;
+}
+.ctc{
+	padding: 15px;
+}
+.reviews{
+	display: contents;
+}
+.reviews1{
+	display: contents;
+}
+.download h2{
+	font-size: 14px;
+}
+.download p{
+	font-size: 9px;
+}
+.logo-container{
+	margin-bottom: 0% !important;
+}
+.funweather{
+	display: contents;
+}
+.fun div, .fun nav{
+	background: rgb(88, 48, 88);
+}
+#top{
+	float: inherit;
+}
+}
+
+@media screen and (max-width: 400px) {
+	.iPhone{
+		height: 200px !important;
+	}
+}
