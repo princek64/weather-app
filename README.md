@@ -1,2 +1,3 @@
-# weather-app-bluesky
+# weather-app
+
 A responsive weather app
